@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Café | Café de Especialidad y Repostería Artesanal</title>
+  <meta name="description" content="Luna Café: cafetería moderna de especialidad. Disfruta del mejor café de origen, repostería recién horneada y un ambiente acogedor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación Principal -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Luna Café - Inicio">
+        <span class="logo-icon">🌙</span>
+        <span class="logo-text">Luna<span class="logo-accent">Café</span></span>
+      </a>
+
+      <!-- Botón menú móvil (hamburguesa) -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Enlaces de navegación -->
+      <nav class="site-nav" id="primaryNav">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="#productos" class="nav-link">Destacados</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary nav-cta">Visítanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Principal -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Café de especialidad 100% Arábica
+        </div>
+        <h1 class="hero-title">El arte del buen café, servido con alma.</h1>
+        <p class="hero-subtitle">
+          Tostado local de origen ético, repostería artesanal horneada cada mañana y un espacio diseñado para inspirarte y conectar.
+        </p>
+        <div class="hero-actions">
+          <a href="#productos" class="btn btn-primary btn-lg" id="btnVerMenu">
+            Ver menú destacado
+            <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#contacto" class="btn btn-secondary btn-lg">Dónde encontrarnos</a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <span class="highlight-number">08:00</span>
+            <span class="highlight-label">Abiertos desde temprano</span>
+          </div>
+          <div class="highlight-divider"></div>
+          <div class="highlight-item">
+            <span class="highlight-number">100%</span>
+            <span class="highlight-label">Granos sostenibles</span>
+          </div>
+          <div class="highlight-divider"></div>
+          <div class="highlight-item">
+            <span class="highlight-number">+15</span>
+            <span class="highlight-label">Variedades y métodos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Sección Sobre Nosotros -->
+    <section class="about-section" id="nosotros">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <img src="images/about.jpg" alt="Barista preparando café de especialidad con método V60" class="about-img" loading="lazy">
+            <div class="about-stat-card">
+              <span class="stat-number">+8</span>
+              <span class="stat-text">Años perfeccionando cada taza</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-tag">Nuestra Pasión</span>
+            <h2 class="section-title">Más que un café, un momento para disfrutar</h2>
+            <p class="section-lead">
+              En Luna Café creemos que cada taza cuenta una historia: la de los agricultores que cultivan el grano con esmero, la de nuestros maestros tostadores y la tuya mientras disfrutas el primer sorbo.
+            </p>
+            <p class="section-description">
+              Nacimos con una misión clara: acercar el café de especialidad a nuestro barrio en un ambiente acogedor, luminoso y sin prisas. Ya sea para trabajar con tu portátil, leer tu novela favorita o charlar con amigos, aquí tienes tu segunda casa.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-card">
+                <div class="feature-icon">☕</div>
+                <div class="feature-info">
+                  <h3>Tueste Semanal</h3>
+                  <p>Seleccionamos lotes únicos de Colombia, Etiopía y Guatemala con trazabilidad completa.</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">🥐</div>
+                <div class="feature-info">
+                  <h3>Obrador Artesanal</h3>
+                  <p>Bollería y panes con masa madre fermentada 24 horas y mantequilla de primera calidad.</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">🌱</div>
+                <div class="feature-info">
+                  <h3>Compromiso Verde</h3>
+                  <p>Envases 100% biodegradables y opciones vegetales sin coste adicional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Sección de Productos Destacados -->
+    <section class="products-section" id="productos">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Nuestros Favoritos</span>
+          <h2 class="section-title">Sabores que enamoran</h2>
+          <p class="section-lead">Una selección de nuestras creaciones más queridas por nuestros clientes habituales.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Producto 1 -->
+          <article class="product-card">
+            <div class="product-badge">Top Ventas</div>
+            <div class="product-image-container">
+              <img src="images/latte.jpg" alt="Taza de Flat White artesanal con dibujo de cisne en latte art" class="product-img" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-header">
+                <h3 class="product-title">Flat White Especial</h3>
+                <span class="product-price">3,20 €</span>
+              </div>
+              <p class="product-description">
+                Doble espresso de origen Etiopía Yirgacheffe con leche fresca vaporizada a textura sedosa y notas de jazmín y chocolate blanco.
+              </p>
+              <div class="product-footer">
+                <span class="product-tag">Caliente</span>
+                <button class="btn btn-outline product-btn" data-product="Flat White Especial" data-price="3,20 €">Pedir en barra</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="product-card">
+            <div class="product-badge">Recién Horneado</div>
+            <div class="product-image-container">
+              <img src="images/croissant.jpg" alt="Croissant artesano francés dorado y crujiente recién horneado" class="product-img" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-header">
+                <h3 class="product-title">Croissant Francés</h3>
+                <span class="product-price">2,80 €</span>
+              </div>
+              <p class="product-description">
+                Elaborado con masa madre y mantequilla pura de Normandía con hojaldrado crujiente por fuera y tierno y alveolado por dentro.
+              </p>
+              <div class="product-footer">
+                <span class="product-tag">Repostería</span>
+                <button class="btn btn-outline product-btn" data-product="Croissant Francés" data-price="2,80 €">Pedir en barra</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="product-card">
+            <div class="product-badge">Especialidad Fría</div>
+            <div class="product-image-container">
+              <img src="images/coldbrew.jpg" alt="Vaso de Nitro Cold Brew con hielo cristalino y rodaja de naranja" class="product-img" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-header">
+                <h3 class="product-title">Nitro Cold Brew Cítrico</h3>
+                <span class="product-price">3,90 €</span>
+              </div>
+              <p class="product-description">
+                Infusionado en frío durante 18 horas con infusión de nitrógeno para crear una crema densa y un toque sutil de naranja deshidratada.
+              </p>
+              <div class="product-footer">
+                <span class="product-tag">Frío & Refrescante</span>
+                <button class="btn btn-outline product-btn" data-product="Nitro Cold Brew Cítrico" data-price="3,90 €">Pedir en barra</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Banner invitación al menú completo -->
+        <div class="menu-cta-banner">
+          <div class="menu-cta-text">
+            <h3>¿Quieres descubrir toda nuestra carta de cafés, tés y tostadas?</h3>
+            <p>Disponemos de opciones sin gluten, sin lactosa y leches vegetales artesanales.</p>
+          </div>
+          <button class="btn btn-primary" id="openFullMenuBtn">Consultar Carta Completa</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal interactivo de carta completa -->
+    <div class="menu-modal" id="menuModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="menu-modal-backdrop" id="modalBackdrop"></div>
+      <div class="menu-modal-content">
+        <button class="menu-modal-close" id="closeModalBtn" aria-label="Cerrar carta">&times;</button>
+        <div class="modal-header">
+          <span class="section-tag">Carta Luna Café</span>
+          <h2 id="modalTitle">Nuestra Carta Completa</h2>
+          <p>Precios con IVA incluido. Consulta a nuestro equipo sobre alérgenos.</p>
+        </div>
+
+        <div class="modal-menu-tabs">
+          <button class="menu-tab-btn active" data-category="cafes">Cafés & Infusiones</button>
+          <button class="menu-tab-btn" data-category="reposteria">Obrador & Dulce</button>
+          <button class="menu-tab-btn" data-category="salado">Tostadas & Salado</button>
+        </div>
+
+        <div class="modal-menu-list" id="modalMenuList">
+          <!-- Se rellena dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Sección de Contacto -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Ven a Conocernos</span>
+          <h2 class="section-title">Estamos listos para recibirte</h2>
+          <p class="section-lead">Pasa a por tu café matutino o escríbenos para reservar mesa o encargar pedidos especiales.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Información y Horarios -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Luna Café Madrid</h3>
+            <p class="contact-info-desc">Ubicados en pleno centro, un rincón de calma en el corazón de la ciudad.</p>
+
+            <ul class="contact-details-list">
+              <li class="contact-detail-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <strong>Dirección</strong>
+                  <p>Calle del Sol naciente, 14, 28004 Madrid</p>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-icon">⏰</div>
+                <div>
+                  <strong>Horario de Apertura</strong>
+                  <p>Lunes a Viernes: 07:30 - 20:30<br>Sábados y Domingos: 08:30 - 21:00</p>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <strong>Teléfono & WhatsApp</strong>
+                  <p><a href="tel:+34912345678" class="contact-link">+34 912 345 678</a></p>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:hola@lunacafe.es" class="contact-link">hola@lunacafe.es</a></p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact-features-badges">
+              <span class="contact-badge">✓ Wi-Fi Gratis de alta velocidad</span>
+              <span class="contact-badge">✓ Pet Friendly 🐾</span>
+              <span class="contact-badge">✓ Terraza exterior</span>
+            </div>
+          </div>
+
+          <!-- Formulario de Contacto interactivo -->
+          <div class="contact-form-wrapper">
+            <h3 class="form-title">Envíanos un mensaje o reserva</h3>
+            <p class="form-desc">Te responderemos en menos de 2 horas en horario de apertura.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre y apellidos *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Ej. Marta Gómez" required>
+                <span class="form-error" id="nameError">Por favor, introduce tu nombre.</span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">Correo electrónico *</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                  <span class="form-error" id="emailError">Introduce un correo electrónico válido.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">Teléfono (opcional)</label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="600 000 000">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reason" class="form-label">Motivo de contacto</label>
+                <select id="reason" name="reason" class="form-select">
+                  <option value="reserva">Reserva de mesa</option>
+                  <option value="evento">Eventos / Grupos</option>
+                  <option value="encargo">Encargo de repostería/granos</option>
+                  <option value="general">Información general</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Mensaje o detalles *</label>
+                <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Cuéntanos cuántas personas seréis, fecha y hora, o tus preguntas..." required></textarea>
+                <span class="form-error" id="messageError">Por favor, escribe un breve mensaje.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span class="btn-text">Enviar mensaje</span>
+                <span class="btn-spinner" hidden></span>
+              </button>
+
+              <div class="form-success-alert" id="formSuccessAlert" hidden role="status">
+                <strong>¡Mensaje enviado con éxito! 🎉</strong>
+                <p>Gracias por contactar con Luna Café. Nos pondremos en contacto contigo lo antes posible.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <a href="#hero" class="logo footer-logo">
+            <span class="logo-icon">🌙</span>
+            <span class="logo-text">Luna<span class="logo-accent">Café</span></span>
+          </a>
+          <p class="footer-tagline">
+            Tu punto de encuentro con el auténtico café de especialidad y la buena repostería en Madrid.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Luna Café" class="social-link">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Luna Café" class="social-link">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Luna Café" class="social-link">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31 0 2.6.47 3.6 1.32.52.44 1 .98 1.4 1.6.43.68.74 1.44.91 2.23.36 1.63.15 3.34-.6 4.82-.41.81-.98 1.52-1.68 2.09-.7.57-1.52.97-2.39 1.18v4.98c0 .87-.24 1.72-.7 2.45-.46.73-1.11 1.31-1.88 1.68-.78.37-1.64.51-2.5.4-.85-.1-1.66-.44-2.33-.97-.67-.53-1.17-1.24-1.45-2.04-.27-.8-.3-1.66-.08-2.48.22-.82.68-1.55 1.32-2.11.64-.56 1.43-.91 2.27-1.02v2.66c-.32.06-.62.2-.87.41-.25.21-.43.49-.52.8-.09.31-.08.64.03.94.11.3.3.56.56.74.26.18.57.27.88.26.31-.01.61-.12.86-.31.25-.19.43-.46.52-.76.09-.3.08-.63-.03-.92v-11.4c1.17 0 2.29-.44 3.16-1.23.86-.79 1.41-1.88 1.54-3.05h2.64z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#nosotros">Nuestra Historia</a></li>
+            <li><a href="#productos">Productos Destacados</a></li>
+            <li><a href="#contacto">Contacto y Reservas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Horario</h4>
+          <ul class="footer-schedule">
+            <li><span>Lunes - Viernes:</span> <span>07:30 - 20:30</span></li>
+            <li><span>Sábado:</span> <span>08:30 - 21:00</span></li>
+            <li><span>Domingo:</span> <span>08:30 - 20:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Ubicación</h4>
+          <address class="footer-address">
+            Calle del Sol naciente, 14<br>
+            28004 Madrid, España<br>
+            <a href="tel:+34912345678">+34 912 345 678</a>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Luna Café S.L. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Aviso Legal</a>
+          <span>•</span>
+          <a href="#">Política de Privacidad</a>
+          <span>•</span>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Flotante para interactividad -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite" hidden>
+    <span class="toast-icon">✨</span>
+    <span class="toast-message" id="toastMessage">Operación realizada con éxito</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
